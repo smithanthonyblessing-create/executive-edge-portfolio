@@ -95,16 +95,18 @@ const TimelineSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`relative mb-12 pl-12 md:pl-0 md:w-1/2 ${
-                i % 2 === 0 ? "md:pr-12 md:text-right" : "md:ml-auto md:pl-12"
+              className={`relative mb-12 pl-14 md:pl-0 md:w-1/2 ${
+                i % 2 === 0 ? "md:pr-16 md:text-right" : "md:ml-auto md:pl-16"
               }`}
             >
               {/* Dot */}
-              <div className={`absolute top-1 left-2.5 md:left-auto flex items-center justify-center w-4 h-4 ${
-                i % 2 === 0 ? "md:right-[-8px]" : "md:left-[-8px]"
-              }`}>
-                <div className="w-4 h-4 rounded-full border-2 border-primary bg-background flex items-center justify-center">
-                  <div className="w-2 h-2 rounded-full bg-primary" />
+              <div
+                className={`absolute top-1.5 left-4 md:left-auto -translate-x-1/2 md:translate-x-0 ${
+                  i % 2 === 0 ? "md:right-[-1px]" : "md:left-[-1px]"
+                }`}
+              >
+                <div className="w-3.5 h-3.5 rounded-full border-2 border-primary bg-background flex items-center justify-center">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                 </div>
               </div>
 
